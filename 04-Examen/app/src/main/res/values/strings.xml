@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Examen - Edison Sanchez</string>
+    <string name="main_object">Equipos</string>
+    <string name="child_object">Jugadores</string>
+</resources>

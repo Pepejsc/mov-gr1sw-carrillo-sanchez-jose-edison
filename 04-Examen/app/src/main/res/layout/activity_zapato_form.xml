@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/disponibilidad_zapato"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZapatoForm">
+
+    <EditText
+        android:id="@+id/fecha_ingreso_zapato"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Fecha Ingreso Zapato"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/zapato_nombre"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/zapato_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/zapato_nombre" />
+
+    <EditText
+        android:id="@+id/costo_zapato"
+        android:layout_width="290dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Costo Zapato"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/fecha_ingreso_zapato"
+        app:layout_constraintStart_toStartOf="@+id/fecha_ingreso_zapato"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_ingreso_zapato" />
+
+    <CheckBox
+        android:id="@+id/disponible_zapato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="¿Esta disponible el zapato?"
+        app:layout_constraintEnd_toEndOf="@+id/costo_zapato"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/costo_zapato"
+        app:layout_constraintTop_toBottomOf="@+id/costo_zapato" />
+
+    <EditText
+        android:id="@+id/zapato_nombre"
+        android:layout_width="289dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Marca Zapato"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_guardar_zapato"
+        android:layout_width="113dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="160dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

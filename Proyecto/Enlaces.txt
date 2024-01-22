@@ -1,0 +1,5 @@
+Historias de Usuario: https://trello.com/invite/b/EKrhQ5oN/ATTI75f4ccd718364371ce037c53a45d46538741F11C/aplicacion-de-peliculas
+
+Mockups: https://www.figma.com/file/LVd1etragOayWZC6ioY8nQ/Aplicaci%C3%B3n-Pel%C3%ADculas?type=design&node-id=0%3A1&mode=design&t=bZJOCGRu6vuJa6Na-1
+
+Diagrama ER Base de datos: https://lucid.app/lucidchart/30120ce1-2a8f-4c63-80c5-3a0ca7824063/edit?viewport_loc=-563%2C-202%2C2468%2C1092%2C0_0&invitationId=inv_61171dae-9e8f-403f-ab13-a33d79dd249e

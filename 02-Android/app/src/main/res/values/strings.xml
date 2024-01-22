@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">2023b-gr1sw-ejsc</string>
+    <string name="saludo">Buenos dias</string>
+    <string-array name="strign_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+</resources>

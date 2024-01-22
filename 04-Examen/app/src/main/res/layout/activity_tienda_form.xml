@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_form_t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="false"
+    tools:context=".TiendaForm">
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disponibilidad_tienda"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/fecha_apertura"
+        android:layout_width="355dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Fecha Apertura Tienda"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/nombre_tienda"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nombre_tienda"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_tienda" />
+
+    <EditText
+        android:id="@+id/id_tienda"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="ID Tienda"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/fecha_apertura"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/fecha_apertura"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_apertura" />
+
+    <EditText
+        android:id="@+id/nombre_tienda"
+        android:layout_width="350dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Nombre Tienda"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/disponibilidad_tienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:checked="false"
+        android:text="¿Esta activa la tienda?"
+        app:layout_constraintEnd_toEndOf="@+id/id_tienda"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/id_tienda"
+        app:layout_constraintTop_toBottomOf="@+id/id_tienda" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
