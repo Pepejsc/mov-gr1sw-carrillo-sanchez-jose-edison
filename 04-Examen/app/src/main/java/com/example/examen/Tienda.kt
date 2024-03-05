@@ -5,8 +5,7 @@ import java.util.*
 data class Tienda(
     var id: Int,
     var nombreTienda: String,
-    var fechaApertura: Date,
-    var netIncome: Float,
+    var fechaApertura: String,
     var disponibilidad: Boolean,
 ){
     override fun toString(): String {

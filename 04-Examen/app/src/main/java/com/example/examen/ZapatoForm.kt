@@ -14,7 +14,7 @@ import java.util.Calendar
 import java.util.Locale
 
 class ZapatoForm : AppCompatActivity() {
-    private val zapatos = MemoryDataBase.zapatos
+    private val zapatos = DataBaseFirebase.zapatos
     private var zapatoId = -1
     private var tiendaId = -1
     val calendar = Calendar.getInstance()

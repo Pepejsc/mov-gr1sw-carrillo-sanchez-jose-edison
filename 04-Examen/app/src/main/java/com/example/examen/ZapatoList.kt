@@ -19,7 +19,7 @@ import com.google.android.material.snackbar.Snackbar
 
 class ZapatoList : AppCompatActivity() {
     private lateinit var adaptador: ArrayAdapter<Zapato>
-    private val zapatos = MemoryDataBase.zapatos
+    private val zapatos = DataBaseFirebase.zapatos
     private lateinit var filterZapatos: ArrayList<Zapato>
     private var itemSeleccionado = -1
     private var currentId: Int = -1
@@ -93,7 +93,7 @@ class ZapatoList : AppCompatActivity() {
         val title = findViewById<TextView>(R.id.main_title)
         title.text = team
 
-        val listView = findViewById<ListView>(R.id.list_view_tienda)
+        val listView = findViewById<ListView>(R.id.list_view_zapato)
         val teamId = intent.getIntExtra("tienda", -1)
         currentId = teamId
         filterZapatos=zapatos.filter { it.tienda  == currentId } as ArrayList<Zapato>
@@ -130,7 +130,7 @@ class ZapatoList : AppCompatActivity() {
 
     private fun showSnackBar(text: String) {
         Snackbar.make(
-            findViewById(R.id.list_view_tienda), text, Snackbar.LENGTH_LONG
+            findViewById(R.id.list_view_zapato), text, Snackbar.LENGTH_LONG
         ).show()
     }
 }

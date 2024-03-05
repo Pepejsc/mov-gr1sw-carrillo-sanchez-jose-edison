@@ -32,13 +32,13 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="@+id/list_view_tienda"
+        app:layout_constraintEnd_toEndOf="@+id/list_view_zapato"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/list_view_tienda"
+        app:layout_constraintStart_toStartOf="@+id/list_view_zapato"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/list_view_tienda"
+        android:id="@+id/list_view_zapato"
         android:layout_width="305dp"
         android:layout_height="493dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,8 +56,8 @@
         android:layout_marginBottom="28dp"
         android:text="Regresar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/list_view_tienda"
+        app:layout_constraintEnd_toEndOf="@+id/list_view_zapato"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/list_view_tienda" />
+        app:layout_constraintStart_toStartOf="@+id/list_view_zapato" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

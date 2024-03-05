@@ -19,7 +19,7 @@
             android:exported="false" />
 
         <service
-            android:name=".MemoryDataBase"
+            android:name=".DataBaseFirebase"
             android:enabled="true"
             android:exported="true" />
 
